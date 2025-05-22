@@ -1,9 +1,9 @@
 <?php
 
-namespace InfyOm\Generator\Facades;
+namespace Jejookit\Generator\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use InfyOm\Generator\Common\FileSystem;
+use Jejookit\Generator\Common\FileSystem;
 use Mockery;
 
 class FileUtils extends Facade

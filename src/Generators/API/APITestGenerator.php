@@ -1,8 +1,8 @@
 <?php
 
-namespace InfyOm\Generator\Generators\API;
+namespace Jejookit\Generator\Generators\API;
 
-use InfyOm\Generator\Generators\BaseGenerator;
+use Jejookit\Generator\Generators\BaseGenerator;
 
 class APITestGenerator extends BaseGenerator
 {

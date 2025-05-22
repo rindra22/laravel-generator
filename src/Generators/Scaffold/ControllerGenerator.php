@@ -1,9 +1,9 @@
 <?php
 
-namespace InfyOm\Generator\Generators\Scaffold;
+namespace Jejookit\Generator\Generators\Scaffold;
 
 use Exception;
-use InfyOm\Generator\Generators\BaseGenerator;
+use Jejookit\Generator\Generators\BaseGenerator;
 
 class ControllerGenerator extends BaseGenerator
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace InfyOm\Generator\Commands\Common;
+namespace Jejookit\Generator\Commands\Common;
 
-use InfyOm\Generator\Commands\BaseCommand;
-use InfyOm\Generator\Generators\MigrationGenerator;
+use Jejookit\Generator\Commands\BaseCommand;
+use Jejookit\Generator\Generators\MigrationGenerator;
 
 class MigrationGeneratorCommand extends BaseCommand
 {
@@ -12,7 +12,7 @@ class MigrationGeneratorCommand extends BaseCommand
      *
      * @var string
      */
-    protected $name = 'infyom:migration';
+    protected $name = 'Jejookit:migration';
 
     /**
      * The console command description.

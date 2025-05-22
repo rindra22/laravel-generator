@@ -1,11 +1,11 @@
 <?php
 
-namespace InfyOm\Generator\Request;
+namespace Jejookit\Generator\Request;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Response;
 use Illuminate\Support\Arr;
-use InfyOm\Generator\Utils\ResponseUtil;
+use Jejookit\Generator\Utils\ResponseUtil;
 
 class APIRequest extends FormRequest
 {

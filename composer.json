@@ -1,7 +1,7 @@
 {
-    "name": "infyomlabs/laravel-generator",
+    "name": "jejookit/laravel-generator",
     "type": "library",
-    "description": "InfyOm Laravel Generator",
+    "description": "jejookit Laravel Generator",
     "keywords": [
         "laravel",
         "api",
@@ -38,7 +38,7 @@
     },
     "autoload": {
         "psr-4": {
-            "InfyOm\\Generator\\": "src/"
+            "Jejookit\\Generator\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -52,13 +52,13 @@
     "extra": {
         "laravel": {
             "providers": [
-                "\\InfyOm\\Generator\\InfyOmGeneratorServiceProvider"
+                "\\Jejookit\\Generator\\JejookitGeneratorServiceProvider"
             ]
         }
     },
     "funding": [{
         "type": "opencollective",
-        "url": "https://opencollective.com/infyomlabs"
+        "url": "https://opencollective.com/jejookit"
     }],
     "minimum-stability": "dev",
     "prefer-stable": true,

@@ -1,12 +1,12 @@
 <?php
 
-namespace InfyOm\Generator\Generators\Scaffold;
+namespace Jejookit\Generator\Generators\Scaffold;
 
 use Exception;
 use Illuminate\Support\Str;
-use InfyOm\Generator\Generators\BaseGenerator;
-use InfyOm\Generator\Generators\ViewServiceProviderGenerator;
-use InfyOm\Generator\Utils\HTMLFieldGenerator;
+use Jejookit\Generator\Generators\BaseGenerator;
+use Jejookit\Generator\Generators\ViewServiceProviderGenerator;
+use Jejookit\Generator\Utils\HTMLFieldGenerator;
 
 class ViewGenerator extends BaseGenerator
 {

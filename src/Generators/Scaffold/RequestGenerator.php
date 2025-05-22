@@ -1,9 +1,9 @@
 <?php
 
-namespace InfyOm\Generator\Generators\Scaffold;
+namespace Jejookit\Generator\Generators\Scaffold;
 
-use InfyOm\Generator\Generators\BaseGenerator;
-use InfyOm\Generator\Generators\ModelGenerator;
+use Jejookit\Generator\Generators\BaseGenerator;
+use Jejookit\Generator\Generators\ModelGenerator;
 
 class RequestGenerator extends BaseGenerator
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace InfyOm\Generator\Commands;
+namespace Jejookit\Generator\Commands;
 
 class APIScaffoldGeneratorCommand extends BaseCommand
 {
@@ -9,7 +9,7 @@ class APIScaffoldGeneratorCommand extends BaseCommand
      *
      * @var string
      */
-    protected $name = 'infyom:api_scaffold';
+    protected $name = 'Jejookit:api_scaffold';
 
     /**
      * The console command description.

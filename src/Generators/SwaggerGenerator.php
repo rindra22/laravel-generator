@@ -1,8 +1,8 @@
 <?php
 
-namespace InfyOm\Generator\Generators;
+namespace Jejookit\Generator\Generators;
 
-use InfyOm\Generator\Common\GeneratorField;
+use Jejookit\Generator\Common\GeneratorField;
 
 class SwaggerGenerator
 {

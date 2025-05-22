@@ -1,8 +1,8 @@
 <?php
 
-namespace InfyOm\Generator\Generators;
+namespace Jejookit\Generator\Generators;
 
-use InfyOm\Generator\Common\GeneratorConfig;
+use Jejookit\Generator\Common\GeneratorConfig;
 
 abstract class BaseGenerator
 {

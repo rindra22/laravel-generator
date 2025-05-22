@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use InfyOm\Generator\InfyOmGeneratorServiceProvider;
+use Jejookit\Generator\JejookitGeneratorServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
@@ -10,7 +10,7 @@ class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            InfyOmGeneratorServiceProvider::class,
+            JejookitGeneratorServiceProvider::class,
         ];
     }
 }

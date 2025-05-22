@@ -1,6 +1,6 @@
 <?php
 
-namespace InfyOm\Generator\Commands\Publish;
+namespace Jejookit\Generator\Commands\Publish;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;

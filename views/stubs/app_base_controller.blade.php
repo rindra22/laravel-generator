@@ -4,12 +4,12 @@
 
 namespace {{ $namespaceApp }}Http\Controllers;
 
-use InfyOm\Generator\Utils\ResponseUtil;
+use Jejookit\Generator\Utils\ResponseUtil;
 
 /**
  * @OA\Server(url="/{{ $apiPrefix }}")
  * @OA\Info(
- *   title="InfyOm Laravel Generator APIs",
+ *   title="Jejookit Laravel Generator APIs",
  *   version="1.0.0"
  * )
  * This class should be parent class for other API controllers

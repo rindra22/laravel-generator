@@ -1,9 +1,9 @@
 <?php
 
-namespace InfyOm\Generator\Generators;
+namespace Jejookit\Generator\Generators;
 
 use Illuminate\Support\Str;
-use InfyOm\Generator\Utils\TableFieldsGenerator;
+use Jejookit\Generator\Utils\TableFieldsGenerator;
 
 class ModelGenerator extends BaseGenerator
 {

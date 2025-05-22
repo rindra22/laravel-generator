@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Str;
-use InfyOm\Generator\Common\FileSystem;
+use Jejookit\Generator\Common\FileSystem;
 
 if (!function_exists('g_filesystem')) {
     /**

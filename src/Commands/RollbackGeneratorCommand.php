@@ -1,30 +1,30 @@
 <?php
 
-namespace InfyOm\Generator\Commands;
+namespace Jejookit\Generator\Commands;
 
-use InfyOm\Generator\Common\GeneratorConfig;
-use InfyOm\Generator\Generators\API\APIControllerGenerator;
-use InfyOm\Generator\Generators\API\APIRequestGenerator;
-use InfyOm\Generator\Generators\API\APIRoutesGenerator;
-use InfyOm\Generator\Generators\API\APITestGenerator;
-use InfyOm\Generator\Generators\FactoryGenerator;
-use InfyOm\Generator\Generators\MigrationGenerator;
-use InfyOm\Generator\Generators\ModelGenerator;
-use InfyOm\Generator\Generators\RepositoryGenerator;
-use InfyOm\Generator\Generators\RepositoryTestGenerator;
-use InfyOm\Generator\Generators\Scaffold\ControllerGenerator;
-use InfyOm\Generator\Generators\Scaffold\MenuGenerator;
-use InfyOm\Generator\Generators\Scaffold\RequestGenerator;
-use InfyOm\Generator\Generators\Scaffold\RoutesGenerator;
-use InfyOm\Generator\Generators\Scaffold\ViewGenerator;
-use InfyOm\Generator\Generators\SeederGenerator;
+use Jejookit\Generator\Common\GeneratorConfig;
+use Jejookit\Generator\Generators\API\APIControllerGenerator;
+use Jejookit\Generator\Generators\API\APIRequestGenerator;
+use Jejookit\Generator\Generators\API\APIRoutesGenerator;
+use Jejookit\Generator\Generators\API\APITestGenerator;
+use Jejookit\Generator\Generators\FactoryGenerator;
+use Jejookit\Generator\Generators\MigrationGenerator;
+use Jejookit\Generator\Generators\ModelGenerator;
+use Jejookit\Generator\Generators\RepositoryGenerator;
+use Jejookit\Generator\Generators\RepositoryTestGenerator;
+use Jejookit\Generator\Generators\Scaffold\ControllerGenerator;
+use Jejookit\Generator\Generators\Scaffold\MenuGenerator;
+use Jejookit\Generator\Generators\Scaffold\RequestGenerator;
+use Jejookit\Generator\Generators\Scaffold\RoutesGenerator;
+use Jejookit\Generator\Generators\Scaffold\ViewGenerator;
+use Jejookit\Generator\Generators\SeederGenerator;
 use Symfony\Component\Console\Input\InputArgument;
 
 class RollbackGeneratorCommand extends BaseCommand
 {
     public GeneratorConfig $config;
 
-    protected $name = 'infyom:rollback';
+    protected $name = 'Jejookit:rollback';
 
     protected $description = 'Rollback a full CRUD API and Scaffold for given model';
 

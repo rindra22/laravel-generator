@@ -1,9 +1,9 @@
 <?php
 
-namespace InfyOm\Generator\Utils;
+namespace Jejookit\Generator\Utils;
 
 use Illuminate\Support\Str;
-use InfyOm\Generator\Common\GeneratorField;
+use Jejookit\Generator\Common\GeneratorField;
 
 class HTMLFieldGenerator
 {

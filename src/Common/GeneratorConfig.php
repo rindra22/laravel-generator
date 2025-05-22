@@ -1,14 +1,14 @@
 <?php
 
-namespace InfyOm\Generator\Common;
+namespace Jejookit\Generator\Common;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
-use InfyOm\Generator\DTOs\GeneratorNamespaces;
-use InfyOm\Generator\DTOs\GeneratorOptions;
-use InfyOm\Generator\DTOs\GeneratorPaths;
-use InfyOm\Generator\DTOs\GeneratorPrefixes;
-use InfyOm\Generator\DTOs\ModelNames;
+use Jejookit\Generator\DTOs\GeneratorNamespaces;
+use Jejookit\Generator\DTOs\GeneratorOptions;
+use Jejookit\Generator\DTOs\GeneratorPaths;
+use Jejookit\Generator\DTOs\GeneratorPrefixes;
+use Jejookit\Generator\DTOs\ModelNames;
 
 class GeneratorConfig
 {

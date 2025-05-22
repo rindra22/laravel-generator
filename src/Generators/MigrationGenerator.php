@@ -1,6 +1,6 @@
 <?php
 
-namespace InfyOm\Generator\Generators;
+namespace Jejookit\Generator\Generators;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;

@@ -1,45 +1,45 @@
 <?php
 
-namespace InfyOm\Generator;
+namespace Jejookit\Generator;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
-use InfyOm\Generator\Commands\API\APIControllerGeneratorCommand;
-use InfyOm\Generator\Commands\API\APIGeneratorCommand;
-use InfyOm\Generator\Commands\API\APIRequestsGeneratorCommand;
-use InfyOm\Generator\Commands\API\TestsGeneratorCommand;
-use InfyOm\Generator\Commands\APIScaffoldGeneratorCommand;
-use InfyOm\Generator\Commands\Common\MigrationGeneratorCommand;
-use InfyOm\Generator\Commands\Common\ModelGeneratorCommand;
-use InfyOm\Generator\Commands\Common\RepositoryGeneratorCommand;
-use InfyOm\Generator\Commands\Publish\GeneratorPublishCommand;
-use InfyOm\Generator\Commands\Publish\PublishTablesCommand;
-use InfyOm\Generator\Commands\Publish\PublishUserCommand;
-use InfyOm\Generator\Commands\RollbackGeneratorCommand;
-use InfyOm\Generator\Commands\Scaffold\ControllerGeneratorCommand;
-use InfyOm\Generator\Commands\Scaffold\RequestsGeneratorCommand;
-use InfyOm\Generator\Commands\Scaffold\ScaffoldGeneratorCommand;
-use InfyOm\Generator\Commands\Scaffold\ViewsGeneratorCommand;
-use InfyOm\Generator\Common\FileSystem;
-use InfyOm\Generator\Common\GeneratorConfig;
-use InfyOm\Generator\Generators\API\APIControllerGenerator;
-use InfyOm\Generator\Generators\API\APIRequestGenerator;
-use InfyOm\Generator\Generators\API\APIRoutesGenerator;
-use InfyOm\Generator\Generators\API\APITestGenerator;
-use InfyOm\Generator\Generators\FactoryGenerator;
-use InfyOm\Generator\Generators\MigrationGenerator;
-use InfyOm\Generator\Generators\ModelGenerator;
-use InfyOm\Generator\Generators\RepositoryGenerator;
-use InfyOm\Generator\Generators\RepositoryTestGenerator;
-use InfyOm\Generator\Generators\Scaffold\ControllerGenerator;
-use InfyOm\Generator\Generators\Scaffold\MenuGenerator;
-use InfyOm\Generator\Generators\Scaffold\RequestGenerator;
-use InfyOm\Generator\Generators\Scaffold\RoutesGenerator;
-use InfyOm\Generator\Generators\Scaffold\ViewGenerator;
-use InfyOm\Generator\Generators\SeederGenerator;
+use Jejookit\Generator\Commands\API\APIControllerGeneratorCommand;
+use Jejookit\Generator\Commands\API\APIGeneratorCommand;
+use Jejookit\Generator\Commands\API\APIRequestsGeneratorCommand;
+use Jejookit\Generator\Commands\API\TestsGeneratorCommand;
+use Jejookit\Generator\Commands\APIScaffoldGeneratorCommand;
+use Jejookit\Generator\Commands\Common\MigrationGeneratorCommand;
+use Jejookit\Generator\Commands\Common\ModelGeneratorCommand;
+use Jejookit\Generator\Commands\Common\RepositoryGeneratorCommand;
+use Jejookit\Generator\Commands\Publish\GeneratorPublishCommand;
+use Jejookit\Generator\Commands\Publish\PublishTablesCommand;
+use Jejookit\Generator\Commands\Publish\PublishUserCommand;
+use Jejookit\Generator\Commands\RollbackGeneratorCommand;
+use Jejookit\Generator\Commands\Scaffold\ControllerGeneratorCommand;
+use Jejookit\Generator\Commands\Scaffold\RequestsGeneratorCommand;
+use Jejookit\Generator\Commands\Scaffold\ScaffoldGeneratorCommand;
+use Jejookit\Generator\Commands\Scaffold\ViewsGeneratorCommand;
+use Jejookit\Generator\Common\FileSystem;
+use Jejookit\Generator\Common\GeneratorConfig;
+use Jejookit\Generator\Generators\API\APIControllerGenerator;
+use Jejookit\Generator\Generators\API\APIRequestGenerator;
+use Jejookit\Generator\Generators\API\APIRoutesGenerator;
+use Jejookit\Generator\Generators\API\APITestGenerator;
+use Jejookit\Generator\Generators\FactoryGenerator;
+use Jejookit\Generator\Generators\MigrationGenerator;
+use Jejookit\Generator\Generators\ModelGenerator;
+use Jejookit\Generator\Generators\RepositoryGenerator;
+use Jejookit\Generator\Generators\RepositoryTestGenerator;
+use Jejookit\Generator\Generators\Scaffold\ControllerGenerator;
+use Jejookit\Generator\Generators\Scaffold\MenuGenerator;
+use Jejookit\Generator\Generators\Scaffold\RequestGenerator;
+use Jejookit\Generator\Generators\Scaffold\RoutesGenerator;
+use Jejookit\Generator\Generators\Scaffold\ViewGenerator;
+use Jejookit\Generator\Generators\SeederGenerator;
 
-class InfyOmGeneratorServiceProvider extends ServiceProvider
+class JejookitGeneratorServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -49,18 +49,18 @@ class InfyOmGeneratorServiceProvider extends ServiceProvider
     public function boot()
     {
         if ($this->app->runningInConsole()) {
-            $configPath = __DIR__.'/../config/laravel_generator.php';
+            $configPath = __DIR__ . '/../config/laravel_generator.php';
             $this->publishes([
                 $configPath => config_path('laravel_generator.php'),
             ], 'laravel-generator-config');
 
             $this->publishes([
-                __DIR__.'/../views' => resource_path('views/vendor/laravel-generator'),
+                __DIR__ . '/../views' => resource_path('views/vendor/laravel-generator'),
             ], 'laravel-generator-templates');
         }
 
         $this->registerCommands();
-        $this->loadViewsFrom(__DIR__.'/../views', 'laravel-generator');
+        $this->loadViewsFrom(__DIR__ . '/../views', 'laravel-generator');
 
         View::composer('*', function ($view) {
             $view->with(['config' => app(GeneratorConfig::class)]);
@@ -121,7 +121,7 @@ class InfyOmGeneratorServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/laravel_generator.php', 'laravel_generator');
+        $this->mergeConfigFrom(__DIR__ . '/../config/laravel_generator.php', 'laravel_generator');
 
         $this->app->singleton(GeneratorConfig::class, function () {
             return new GeneratorConfig();

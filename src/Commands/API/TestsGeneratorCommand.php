@@ -1,10 +1,10 @@
 <?php
 
-namespace InfyOm\Generator\Commands\API;
+namespace Jejookit\Generator\Commands\API;
 
-use InfyOm\Generator\Commands\BaseCommand;
-use InfyOm\Generator\Generators\API\APITestGenerator;
-use InfyOm\Generator\Generators\RepositoryTestGenerator;
+use Jejookit\Generator\Commands\BaseCommand;
+use Jejookit\Generator\Generators\API\APITestGenerator;
+use Jejookit\Generator\Generators\RepositoryTestGenerator;
 
 class TestsGeneratorCommand extends BaseCommand
 {
@@ -13,7 +13,7 @@ class TestsGeneratorCommand extends BaseCommand
      *
      * @var string
      */
-    protected $name = 'infyom.api:tests';
+    protected $name = 'Jejookit.api:tests';
 
     /**
      * The console command description.

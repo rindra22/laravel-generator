@@ -1,9 +1,9 @@
 <?php
 
-namespace InfyOm\Generator\Commands\Scaffold;
+namespace Jejookit\Generator\Commands\Scaffold;
 
-use InfyOm\Generator\Commands\BaseCommand;
-use InfyOm\Generator\Generators\Scaffold\ViewGenerator;
+use Jejookit\Generator\Commands\BaseCommand;
+use Jejookit\Generator\Generators\Scaffold\ViewGenerator;
 
 class ViewsGeneratorCommand extends BaseCommand
 {
@@ -12,7 +12,7 @@ class ViewsGeneratorCommand extends BaseCommand
      *
      * @var string
      */
-    protected $name = 'infyom.scaffold:views';
+    protected $name = 'Jejookit.scaffold:views';
 
     /**
      * The console command description.

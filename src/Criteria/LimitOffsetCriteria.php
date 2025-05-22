@@ -1,6 +1,6 @@
 <?php
 
-namespace InfyOm\Generator\Criteria;
+namespace Jejookit\Generator\Criteria;
 
 use Illuminate\Http\Request;
 use Prettus\Repository\Contracts\CriteriaInterface;

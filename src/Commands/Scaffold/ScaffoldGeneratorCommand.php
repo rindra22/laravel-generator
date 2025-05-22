@@ -1,8 +1,8 @@
 <?php
 
-namespace InfyOm\Generator\Commands\Scaffold;
+namespace Jejookit\Generator\Commands\Scaffold;
 
-use InfyOm\Generator\Commands\BaseCommand;
+use Jejookit\Generator\Commands\BaseCommand;
 
 class ScaffoldGeneratorCommand extends BaseCommand
 {
@@ -11,7 +11,7 @@ class ScaffoldGeneratorCommand extends BaseCommand
      *
      * @var string
      */
-    protected $name = 'infyom:scaffold';
+    protected $name = 'Jejookit:scaffold';
 
     /**
      * The console command description.

@@ -1,9 +1,9 @@
 <?php
 
-namespace InfyOm\Generator\Commands\API;
+namespace Jejookit\Generator\Commands\API;
 
-use InfyOm\Generator\Commands\BaseCommand;
-use InfyOm\Generator\Generators\API\APIRequestGenerator;
+use Jejookit\Generator\Commands\BaseCommand;
+use Jejookit\Generator\Generators\API\APIRequestGenerator;
 
 class APIRequestsGeneratorCommand extends BaseCommand
 {
@@ -12,7 +12,7 @@ class APIRequestsGeneratorCommand extends BaseCommand
      *
      * @var string
      */
-    protected $name = 'infyom.api:requests';
+    protected $name = 'Jejookit.api:requests';
 
     /**
      * The console command description.

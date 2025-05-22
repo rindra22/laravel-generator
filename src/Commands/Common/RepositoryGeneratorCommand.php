@@ -1,9 +1,9 @@
 <?php
 
-namespace InfyOm\Generator\Commands\Common;
+namespace Jejookit\Generator\Commands\Common;
 
-use InfyOm\Generator\Commands\BaseCommand;
-use InfyOm\Generator\Generators\RepositoryGenerator;
+use Jejookit\Generator\Commands\BaseCommand;
+use Jejookit\Generator\Generators\RepositoryGenerator;
 
 class RepositoryGeneratorCommand extends BaseCommand
 {
@@ -12,7 +12,7 @@ class RepositoryGeneratorCommand extends BaseCommand
      *
      * @var string
      */
-    protected $name = 'infyom:repository';
+    protected $name = 'Jejookit:repository';
 
     /**
      * The console command description.

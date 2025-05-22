@@ -1,6 +1,6 @@
 <?php
 
-namespace InfyOm\Generator\Utils;
+namespace Jejookit\Generator\Utils;
 
 class GeneratorFieldsInputUtil
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace InfyOm\Generator\Generators\API;
+namespace Jejookit\Generator\Generators\API;
 
-use InfyOm\Generator\Generators\BaseGenerator;
-use InfyOm\Generator\Generators\ModelGenerator;
+use Jejookit\Generator\Generators\BaseGenerator;
+use Jejookit\Generator\Generators\ModelGenerator;
 
 class APIRequestGenerator extends BaseGenerator
 {

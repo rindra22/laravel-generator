@@ -1,9 +1,9 @@
 <?php
 
-namespace InfyOm\Generator\Generators;
+namespace Jejookit\Generator\Generators;
 
 use Illuminate\Support\Str;
-use InfyOm\Generator\Utils\GeneratorFieldsInputUtil;
+use Jejookit\Generator\Utils\GeneratorFieldsInputUtil;
 
 class FactoryGenerator extends BaseGenerator
 {

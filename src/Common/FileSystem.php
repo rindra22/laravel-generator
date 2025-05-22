@@ -1,6 +1,6 @@
 <?php
 
-namespace InfyOm\Generator\Common;
+namespace Jejookit\Generator\Common;
 
 class FileSystem
 {

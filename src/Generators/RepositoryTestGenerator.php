@@ -1,6 +1,6 @@
 <?php
 
-namespace InfyOm\Generator\Generators;
+namespace Jejookit\Generator\Generators;
 
 class RepositoryTestGenerator extends BaseGenerator
 {

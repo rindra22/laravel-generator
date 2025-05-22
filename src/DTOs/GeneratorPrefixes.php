@@ -1,6 +1,6 @@
 <?php
 
-namespace InfyOm\Generator\DTOs;
+namespace Jejookit\Generator\DTOs;
 
 use Illuminate\Support\Str;
 

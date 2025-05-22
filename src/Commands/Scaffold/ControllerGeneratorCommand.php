@@ -1,9 +1,9 @@
 <?php
 
-namespace InfyOm\Generator\Commands\Scaffold;
+namespace Jejookit\Generator\Commands\Scaffold;
 
-use InfyOm\Generator\Commands\BaseCommand;
-use InfyOm\Generator\Generators\Scaffold\ControllerGenerator;
+use Jejookit\Generator\Commands\BaseCommand;
+use Jejookit\Generator\Generators\Scaffold\ControllerGenerator;
 
 class ControllerGeneratorCommand extends BaseCommand
 {
@@ -12,7 +12,7 @@ class ControllerGeneratorCommand extends BaseCommand
      *
      * @var string
      */
-    protected $name = 'infyom.scaffold:controller';
+    protected $name = 'Jejookit.scaffold:controller';
 
     /**
      * The console command description.

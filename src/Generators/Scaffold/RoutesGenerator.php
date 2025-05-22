@@ -1,9 +1,9 @@
 <?php
 
-namespace InfyOm\Generator\Generators\Scaffold;
+namespace Jejookit\Generator\Generators\Scaffold;
 
 use Illuminate\Support\Str;
-use InfyOm\Generator\Generators\BaseGenerator;
+use Jejookit\Generator\Generators\BaseGenerator;
 
 class RoutesGenerator extends BaseGenerator
 {

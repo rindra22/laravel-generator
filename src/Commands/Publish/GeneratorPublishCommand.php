@@ -1,6 +1,6 @@
 <?php
 
-namespace InfyOm\Generator\Commands\Publish;
+namespace Jejookit\Generator\Commands\Publish;
 
 use Symfony\Component\Console\Input\InputOption;
 
@@ -11,7 +11,7 @@ class GeneratorPublishCommand extends PublishBaseCommand
      *
      * @var string
      */
-    protected $name = 'infyom:publish';
+    protected $name = 'Jejookit:publish';
 
     /**
      * The console command description.
